@@ -3,6 +3,8 @@ import './topic.css';
 import { Link } from "react-router-dom";
 
 const Topic = () => {
+
+    
     return (
         <div className="container__topic">
             <div className="container-line">
@@ -36,6 +38,11 @@ const Topic = () => {
                         <Link to="/topicosImportantes"><li>Tópicos Importantes</li></Link>
                         <Link to="/extras"><li>Extras</li></Link>
                         <Link to="/teste"><li>Testes</li></Link>
+                        <li>Meta Modelo</li>
+                        <li>Metodologias Ágeis</li>
+                        <Link to="/uxui"><li>Ux e UI</li></Link>
+                        <li>Figma</li>
+                        <Link to="/systemdesign"><li>System Design</li></Link>
                     </ul>
                 </div>
             </div>

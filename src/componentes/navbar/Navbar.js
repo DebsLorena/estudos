@@ -27,7 +27,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="list active">
-                    <a href="https://debslorena.github.io/developer-frontend/">
+                    <a href="https://debslorena.github.io/developer-frontend/" rel="noreferrer" target="_blank">
                         <span className="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="list">
-                    <a href="https://github.com/DebsLorena" target="_blank">
+                    <a href="https://github.com/DebsLorena" rel="noreferrer" target="_blank">
                         <span className="icon">
                             <ion-icon name="logo-github"></ion-icon>
                         </span>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="list">
-                    <a href="https://www.linkedin.com/in/loredebs/" target="_blank">
+                    <a href="https://www.linkedin.com/in/loredebs/" rel="noreferrer" target="_blank">
                         <span className="icon">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </span>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="list">
-                    <a href="https://api.whatsapp.com/send?phone=5161983434026" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=5161983434026" rel="noreferrer" target="_blank">
                         <span className="icon">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </span>

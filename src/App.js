@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Html from "./pages/Html";
 import Css from "./pages/Css";
@@ -20,6 +20,8 @@ import TypeScript from "./pages/TypeScript";
 import Seguranca from "./pages/Segurança";
 import Teste from "./pages/Teste";
 import Acessibilidade from "./pages/Acessibilidade";
+import SystemDesign from "./pages/SystemDesign";
+import UxUi from "./pages/UxUi";
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
         <Route path="/topicosImportantes" element={<TopicosImportantes />} />
         <Route path="/extras" element={<Extras />} />
         <Route path="/teste" element={<Teste />} />
+        <Route path="/systemdesign" element={<SystemDesign />} />
+        <Route path="/uxui" element={<UxUi />} />
       </Routes>
     </Router>
   );

@@ -3,44 +3,39 @@ import Footer from '../componentes/footer/Footer';
 import Navbar from '../componentes/navbar/Navbar';
 
 
-const FrameworkCss = () => {
+const UxUi = () => {
 
     const [content, setContent] = useState();
 
     function handleClickContent() {
         setContent(!content);
     }
+
     return (
         <div>
             <Navbar />
             <div className='Container__page'>
                 <ul>
-                    <li onClick={handleClickContent}>Bootstrap</li>
+                    <li onClick={handleClickContent}>Ux</li>
                     {content && (
                         <div className='Material' >
-                            <p>04 de Outubro de 2022</p>
+                            <p>22 de Janeiro </p>
                             <div className='line'></div>
-                            <p><a href='modelo'>Link do estudo </a></p>
-                            <p> Resumo do que foi aprendido</p>
-                            <p><a href='modelo'>Link do repositorio </a></p>
-                            <p><a href='modelo'>Link da github pages ou vercel </a></p>
-                        </div>
+                            <p></p>
+                            <p> Ux para quem (ainda) não é de Ux<br/>
+                            Curso Udemy - Will Sertório</p>
+                            </div>
                     )}
                     {!content && (
                         <div></div>
                     )}
-                    <li>Tailwind</li>
-                    <li>Materialize</li>
-                    <li>Bulma</li>
-                    <li>Semantic Ui</li>
-                    <li>Foundation</li>
+                    <li>Ui</li>
+                    
                 </ul>
-
-
             </div>
             <Footer />
         </div>
     )
 }
 
-export default FrameworkCss
+export default UxUi
