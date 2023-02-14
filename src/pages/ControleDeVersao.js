@@ -7,6 +7,7 @@ import image3 from '../image/git/image3.PNG';
 import image4 from '../image/git/image4.PNG';
 import image5 from '../image/git/image5.PNG';
 import image6 from '../image/git/image6.PNG';
+import image7 from '../image/git/image7.PNG';
 
 const ControleDeVersao = () => {
 
@@ -138,7 +139,50 @@ const ControleDeVersao = () => {
                             <p> npm i -D jest @types/jest ts-jest</p>
                             <p> Criar arquivo .hyskyrc.json </p>
                             <img src={image6} height="200px" alt=''></img>
-                            
+
+                            <h2> Conventional Commits </h2>
+                            <a href='https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657' rel="noreferrer" target="_blank">Clique aqui </a>
+                            <a href='https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/#especifica%C3%A7%C3%A3o' rel="noreferrer" target="_blank">Clique aqui </a>
+                            <p>O que é ?
+                                O Conventional Commits é uma convenção simples de mensagens de commit, que segue um conjunto de regras e que ajuda os projetos a terem um histórico de commit explícito e bem estruturado.</p>
+                            <p>Como utilizar
+                                As regras são muito simples, como demonstrado abaixo temos um tipo de commit (type), o escopo/contexto do commit (scope) e o assunto/mensagem do commit (subject), mas adiante irei detalhar cada um. </p>
+                            <img src={image7} height="200px" alt=''></img>
+
+                            <ul>
+                                Type: Quais são os tipos de commit
+                                O type é responsável por nos dizer qual o tipo de alteração ou iteração está sendo feita, das regras da convenção, temos os seguintes tipos:
+
+                                <li>test: indica qualquer tipo de criação ou alteração de códigos de teste. Exemplo: Criação de testes unitários.</li>
+                                <li>feat: indica o desenvolvimento de uma nova feature ao projeto. Exemplo: Acréscimo de um serviço, funcionalidade, endpoint, etc.</li>
+                                <li>refactor: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica/regras de negócio do sistema. Exemplo: Mudanças de código após um code review</li>
+                                <li>style: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma.</li>
+                                Exemplo: Mudar o style-guide, mudar de convenção lint, arrumar indentações, remover espaços em brancos, remover comentários, etc..
+                                <li>fix: utilizado quando há correção de erros que estão gerando bugs no sistema.</li>
+                                Exemplo: Aplicar tratativa para uma função que não está tendo o comportamento esperado e retornando erro.
+                                <li>chore: indica mudanças no projeto que não afetem o sistema ou arquivos de testes. São mudanças de desenvolvimento.</li>
+                                Exemplo: Mudar regras do eslint, adicionar prettier, adicionar mais extensões de arquivos ao .gitignore
+                                <li>docs: usado quando há mudanças na documentação do projeto.</li>
+                                Exemplo: adicionar informações na documentação da API, mudar o README, etc.
+                                <li>build: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.
+                                Exemplo: Gulp, adicionar/remover dependências do npm, etc.</li>
+                                <li>perf: indica uma alteração que melhorou a performance do sistema.
+                                Exemplo: alterar ForEach por while, melhorar a query ao banco, etc.</li>
+                                <li>ci: utilizada para mudanças nos arquivos de configuração de CI.
+                                Exemplo: Circle, Travis, BrowserStack, etc.
+                                revert: indica a reverão de um commit anterior.</li>
+                            </ul>
+                            <img src={"https://miro.medium.com/v2/resize:fit:720/format:webp/1*izVKF4AT1iDtv4fJO8oWWA.png"} height="200px" alt=''></img>
+                            <ul>
+                                <li>Só pode ser utilizado um type por commit;</li>
+                                <li>O type é obrigatório;</li>
+                                <li>Caso esteja indeciso sobre qual type usar, provavelmente trata-se de uma grande mudança e é possível separar esse commit em dois ou mais commits;</li>
+                                <li>A diferença entre build e chore pode ser um tanto quanto sutil e pode gerar confusão, por isso devemos ficar atentos quanto ao tipo correto. No caso do Node.js por exemplo, podemos pensar que quando há uma adição/alteração de certa dependência de desenvolvimento presente em devDependencies, utilizamos o chore. Já para alterações/adições de dependências comuns aos projeto, e que haja impacto direto e real sobre o sistema, utilizamos o build.</li>
+                            </ul>
+                            <img src={"https://miro.medium.com/v2/resize:fit:720/format:webp/1*IZPTYtwxI-UgULgOjf8GKQ.png"} height="200px" alt=''></img>
+                            <p>Lembrando que o scope deve ser inserido no commit entre parênteses, Os escopos devem ser separados com / , \ ou </p>
+                            <p> duvida: definir o escopo do commit, de acordo com a sprint que trabalhamos 
+                            <img src={"https://miro.medium.com/v2/resize:fit:720/format:webp/1*CFO9815DI0h53U3-1n1RVw.png"} height="200px" alt=''></img></p>
                         </div>
                     )}
                     {!content && (
@@ -165,7 +209,31 @@ const ControleDeVersao = () => {
                     {!content && (
                         <div></div>
                     )}
-                    <li>GitFlow</li>
+                    <li onClick={handleClickContent}>GitFlow</li>
+                    {content && (
+                        <div className='Material' >
+                            <p>14 de Fevereiro de 2023</p>
+                            <div className='line'></div>
+                            <p>Gitflow</p>
+                                <a href='https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar'>Clique aqui </a>
+                            <p><strong>O que é Git Flow? </strong> O Git Flow é um modelo, uma estratégia ou, ainda, um fluxo de trabalho muito utilizado por equipes de desenvolvimento de software. Ele se destaca por auxiliar na organização do versionamento de códigos.</p>
+                            <img src={"https://www.alura.com.br/artigos/assets/git-flow-o-que-e-como-quando-utilizar/imagem3.png"} height="200px" alt=''></img>
+                            <p>O Git Flow trabalha com duas branches principais, a Develop e a Master, que duram para sempre; e três branches de suporte, Feature, Release e Hotfix, que são temporários e duram até realizar o merge com as branches principais.</p>
+                            <ul>
+                                <li>git checkout develop</li>
+                                <li>git checkout -b name-feature</li>
+                                <li>git flow feature start name-feature</li>
+                                <li>git merge name-feature</li>
+                                <li>git flow feature finish name-feature</li>
+                                <li></li>
+                            </ul>
+
+
+                        </div>
+                    )}
+                    {!content && (
+                        <div></div>
+                    )}
                     <li>GitLab</li>
                 </ul>
             </div>
