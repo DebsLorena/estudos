@@ -22,6 +22,7 @@ import Teste from "./pages/Teste";
 import Acessibilidade from "./pages/Acessibilidade";
 import SystemDesign from "./pages/SystemDesign";
 import UxUi from "./pages/UxUi";
+import Architecture from "./pages/Architeture";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/teste" element={<Teste />} />
         <Route path="/systemdesign" element={<SystemDesign />} />
         <Route path="/uxui" element={<UxUi />} />
+        <Route path="/architecture" element={<Architecture />} />
       </Routes>
     </Router>
   );

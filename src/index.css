@@ -55,3 +55,7 @@ text-decoration: none;
   list-style: square;
 
 }
+
+ul {
+  padding-left: 20px;
+}

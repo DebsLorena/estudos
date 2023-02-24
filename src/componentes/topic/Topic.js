@@ -42,6 +42,7 @@ const Topic = () => {
                         <li>Metodologias Ágeis</li>
                         <Link to="/uxui"><li>Ux e UI</li></Link>
                         <li>Figma</li>
+                        <Link to="/architecture"><li>Architecture</li></Link>
                         <Link to="/systemdesign"><li>System Design</li></Link>
                     </ul>
                 </div>
