@@ -44,6 +44,7 @@ const Topic = () => {
                         <li>Figma</li>
                         <Link to="/architecture"><li>Architecture</li></Link>
                         <Link to="/systemdesign"><li>System Design</li></Link>
+                        <Link to="/codewars"><li>Codewars</li></Link>
                     </ul>
                 </div>
             </div>

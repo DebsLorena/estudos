@@ -23,6 +23,7 @@ import Acessibilidade from "./pages/Acessibilidade";
 import SystemDesign from "./pages/SystemDesign";
 import UxUi from "./pages/UxUi";
 import Architecture from "./pages/Architeture";
+import Codewars from "./pages/Codewars";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route path="/systemdesign" element={<SystemDesign />} />
         <Route path="/uxui" element={<UxUi />} />
         <Route path="/architecture" element={<Architecture />} />
+        <Route path="/codewars" element={<Codewars />} />
       </Routes>
     </Router>
   );
